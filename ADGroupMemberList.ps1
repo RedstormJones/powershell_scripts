@@ -36,8 +36,9 @@ function getGroupMembers($group)
 $date = (Get-Date).GetDateTimeFormats()[5]
 $group_members_list = @()
 $export_filepath = "C:\temp\$date.csv"
+$searchbase = "<AD_search_base>"
 
-$groups = Get-ADGroup -Filter * -Properties * -SearchBase "OU=Groups,OU=Kiewit,DC=KIEWITPLAZA,DC=com"
+$groups = Get-ADGroup -Filter * -Properties * -SearchBase $searchbase
 
 foreach($group in $groups)
 {
