@@ -5,6 +5,11 @@
  # Description: This script performs recursive queries for the members of Active Directory groups.
  #              If any group members are themselves a group, then the script will also query for 
  #              that groups members, and so on..
+ #
+ #
+ # *** BEFORE YOU USE THIS SCRIPT! ***
+ # Make sure you've installed the Active Directory PowerShell Module or else the cmdlet Get-ADGroup will not work. 
+ #
  #>
 
 function getGroupMembers($group)

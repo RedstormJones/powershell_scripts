@@ -3,6 +3,13 @@
  # Created Date: 2016-12-29
  #
  # Description: This script performs username and NTLM hash extraction given a system registry hive and ntds.dit database file.
+ #
+ #
+ # *** BEFORE YOU USE THIS SCRIPT! ***
+ # Make sure you've installed the DSInternals PowerShell Module or else the cmdlets Get-BootKey and Get-ADDBAccount will not work. 
+ #   You can find the source code here:  https://github.com/MichaelGrafnetter/DSInternals
+ #   Or download the zip file here:      https://www.dsinternals.com/en/downloads/
+ #
  #>
 
 $date = (Get-Date).GetDateTimeFormats()[5]
