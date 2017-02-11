@@ -26,6 +26,7 @@ function authenticate()
         }
 "@
 
+    # ignore warning about untrusted cert
     [System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy -ErrorAction SilentlyContinue
 
     $body = @{
